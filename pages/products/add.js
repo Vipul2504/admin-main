@@ -12,10 +12,8 @@ const AddProduct = () => {
     const [formData, setFormData] = useState({
         name: '',
         subname: '',
-        category: '',
         country: '',
         desc: '',
-        gender: '',
         image: '',
         importer: '',
         price: "",
@@ -81,19 +79,22 @@ const AddProduct = () => {
                                 </div>
 
                                 <div className='w-1/2 ml-2'>
-                                    <select placeholder="Select Category" className='w-full outline-none border p-3' name='category' onChange={handleChange}>
+                                    {/* <select placeholder="Select Category" className='w-full outline-none border p-3' name='category' onChange={handleChange}>
                                         <option value="football-boots">Football Shoes</option>
                                         <option value="running-shoes">Running Shoes</option>
                                         <option value="tracksuit">Tracksuit</option>
                                         <option value="clothing">Clothing</option>
                                         <option value="bags">Bags</option>
                                         <option value="accessories">Accessories</option>
-                                    </select>
+                                    </select> */}
 
                                     <select name='gender' placeholder="Select Category" className='w-full p-3 border mt-4' onChange={handleChange}>
                                         <option value="BED">BED</option>
                                         <option value="SOFA">SOFA</option>
                                         <option value="KABBAD">KABBAD</option>
+                                        <option value="CHAIRS">CHAIRS</option>
+                                        <option value="KITCHEN">KITCHEN</option>
+                                        <option value="CABINET">CABINET</option>
                                     </select>
                                 </div>
                             </div>
@@ -109,7 +110,7 @@ const AddProduct = () => {
                             <div className='flex w-full mt-4'>
                                 <div className='w-1/2 flex mr-2'>
                                     <input type='number' name='price' onChange={handleChange} className="w-full border outline-none p-3 px-5 mr-2" placeholder="Enter Price..." />
-                                    <input type='number' name='salePrice' onChange={handleChange} className="w-full border outline-none p-3 px-5 ml-2" placeholder="Enter Price..." />
+                                    <input type='number' name='salePrice' onChange={handleChange} className="w-full border outline-none p-3 px-5 ml-2" placeholder="Enter SalePrice..." />
                                 </div>
 
                                 <div className='w-1/2 ml-2'>
