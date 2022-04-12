@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <div>
-            <h1 className='font-bold text-3xl'>Hello there, {user.email}</h1>
+            <h1 className='font-bold text-3xl'>Hello there, {user?.email}</h1>
             <p className='mb-4'>Here is some information about products</p>
         </div>
     )
