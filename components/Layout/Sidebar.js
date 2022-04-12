@@ -48,10 +48,6 @@ const Sidebar = () => {
                                     &nbsp; Users
                                 </li>
                             </Link>
-                            <li className={`font-semibold text-gray-400 text-base cursor-pointer hover:bg-gray-100  p-2 px-4`}>
-                                <i className="fas fa-cog w-5"></i>
-                                &nbsp; Settings
-                            </li>
                         </ul>
 
                         <h1 className=' my-4 font-bold text-gray-400'>BUSINESS</h1>

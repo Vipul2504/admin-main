@@ -12,7 +12,7 @@ const AddProduct = () => {
     const [formData, setFormData] = useState({
         name: '',
         subname: '',
-        Category: '',
+        category: '',
         country: '',
         desc: '',
         gender: '',
@@ -81,21 +81,21 @@ const AddProduct = () => {
                                 </div>
 
                                 <div className='w-1/2 ml-2'>
-                                    <select placeholder="Select Category" className='w-full outline-none border p-3' name='gender' onChange={handleChange}>
-                                        <option value="BED">BED</option>
-                                        <option value="SOFA">SOFA</option>
-                                        <option value="KABBAD">KABBAD</option>
-                                        <option value="CHAIRS">CHAIRS</option>
-                                        <option value="KITCHEN">KITCHEN</option>
-                                        <option value="CABINET">CABINET</option>
+                                    <select placeholder="Select Category" className='w-full outline-none border p-3' name='category' onChange={handleChange}>
+                                        <option value="football-boots">Bed</option>
+                                        <option value="running-shoes">Sofa</option>
+                                        <option value="tracksuit">Kabbad</option>
+                                        <option value="clothing">Chair</option>
+                                        <option value="bags">Kitchen</option>
+                                        <option value="accessories">Cabinet</option>
                                     </select>
 
-                                    <select name='Category' placeholder="Select Category" className='w-full p-3 border mt-4' onChange={handleChange}>
+                                    <select name='gender' placeholder="Select Gender" className='w-full p-3 border mt-4' onChange={handleChange}>
                                         <option value="BED">BED</option>
                                         <option value="SOFA">SOFA</option>
-                                        <option value="KITCHEN">KITCHEN</option>
                                         <option value="KABBAD">KABBAD</option>
                                         <option value="CHAIRS">CHAIRS</option>
+                                        <option value="KITCHEN">KITCHEN</option>
                                         <option value="CABINET">CABINET</option>
                                     </select>
                                 </div>
